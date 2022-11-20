@@ -1,0 +1,205 @@
+$main-font-color: #666666;
+$accent-color: #FFCC00;
+$font-family: "Roboto", sans-serif;
+
+body{
+    font-family: $font-family;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top:120px;
+header{
+        width:1170px;
+        margin:auto;
+        text-align: center;
+        border-bottom: 1px solid $accent-color;
+        position: relative;
+    
+        p{
+            font-size:18px;
+            font-weight: 500px;
+            text-transform: uppercase;
+            color:#898F8F;
+            margin:0;
+          }
+        h1{
+            font-size:60px;
+            font-weight: 900px;
+            text-transform: uppercase;
+            color:$accent-color;
+            margin:0;
+            padding-bottom: 50px;
+           }
+        &::after{
+            content:"";
+            background-image: url(../images/bonfire-sharp-1.jpg);
+            display: block;
+            width:20px;
+            height: 20px;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            bottom:-10px;
+            outline: 5px solid white;
+            z-index: 5;
+
+        }
+       }
+main{
+    max-width:1170px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+.main__left{
+    width:586px;
+    padding:96px;
+    border-right: 1px solid $accent-color;
+}
+.main-right{
+    width:584px;
+    }
+img{
+    border:1px solid $accent-color;
+}
+.main-photo-wrapper{
+    position: relative;
+    .main-photo__decor{
+        width:100px;
+        height: 100px;
+        
+        position: absolute;
+        
+
+    }
+    .tl{top:-15px;
+        left:-15px;
+        border-top:1px solid $accent-color;
+        border-left: 1px solid $accent-color;};
+    .tr{top:-15px;
+        right:-15px;
+        border-top:1px solid $accent-color;
+        border-right: 1px solid $accent-color;
+}
+    .bl{bottom:-15px;
+        left:-15px;
+        border-bottom:1px solid $accent-color;
+        border-left: 1px solid $accent-color;
+     };
+    .br{bottom:-15px;
+        right:-15px;
+        border-bottom:1px solid $accent-color;
+        border-right: 1px solid $accent-color;
+
+    };
+}
+.main-info-wrapper{
+    padding:70px;
+    color:$main-font-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 36px;
+        font-weight: 900;
+        color:$main-font-color;
+        margin:0;
+        position: relative;
+
+     &::after{
+        content: "";
+        display: block;
+        width:100px;
+        height: 2px;
+        background-color: $accent-color;
+        margin-top:30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+     }   
+    }
+    h3{
+        margin:0;
+        margin-top:60px;
+        font-size:24px;
+        font-weight: 200;
+
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+
+        // &::after{
+        //     content:"";
+        //     display: block;
+        //     height: 2px;
+        //     width:50px;
+        //     background-color: $accent-color;
+        // }
+        
+    }
+    ul{
+    display: flex;
+    padding: 0;
+    gap:5px;
+    margin-top:30px;
+
+    li{
+        list-style: none;
+        width:30px;
+        height: 30px;
+        border:3px solid #CCCCCC;
+        border-radius: 50%;
+        position: relative;
+
+        svg{
+            position: absolute;
+            fill:#CCCCCC;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    }}
+    .dotted-line-wrapper{
+        position: relative;
+    
+        .dotted-line{
+
+            width:50px;
+            height: 3px;
+            background-color: $accent-color;
+        }
+        .dotted-line-gap_1, .dotted-line-gap_2{
+            width: 5px;
+            height: 3px;
+            background-color: #fff;
+            position: absolute;
+}
+.dotted-line-gap_1{
+    left:10px;
+    top:0px;
+}
+.dotted-line-gap_2{
+    right:10px;
+    top:0px;
+}
+
+    }
+button{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:$main-font-color;
+    border: 2px solid $accent-color;
+    background-color: transparent;
+    padding:5px 10px;
+    margin-top:30px;
+}
+    
+}}
+}
+
